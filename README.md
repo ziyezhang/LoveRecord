@@ -3,7 +3,7 @@ Love Record 一个照片轮播的动画网站，纪录了我们在一起的时�
 
 [点此，查看我们的记忆](https://iamjohnnyzhuang.github.io/LoveRecord/iloveu.html) 
 [生日快乐](https://htmlpreview.github.io/?https://github.com/ziyezhang/happybirthday/blob/master/iloveu.html)
-https://github.com/ziyezhang/happybirthday/blob/master/iloveu.html
+
 
 
 **兼容性**
