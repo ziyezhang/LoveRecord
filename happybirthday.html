@@ -16,46 +16,46 @@
         <div id="carousel"  class="carousel slide carousel-fade carousel-position">
             <div class="carousel-inner" style="width: 100%;height: 100%;" id="background">
                 <div class="item active" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background:url(./img/1.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background:url(./img/1.jpg);"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/2.JPG) ;background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/2.jpg) ;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/3.png) ;background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/3.jpg) ;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/4.JPG) ;background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/4.jpg) ;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/5.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/5.jpg);"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/6.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/6.jpg);"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/7.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/7.jpg);"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/8.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/8.jpg);"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/9.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/9.jpg);"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/10.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/10.jpg);"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/11.png);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/11.jpg);background-size: cover;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/12.png);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/12.jpg);background-size: cover;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/13.png);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/13.jpg);background-size: cover;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background-image: url(./img/14.png);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background-image: url(./img/14.jpg);background-size: cover;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
                     <div style="width: 100%;height: 100%;background-image: url(./img/15.jpg);background-size: cover;"></div>
@@ -145,7 +145,6 @@
         //设置起始日期
         countTime('2016/01/30 23:45', 'day', 'hour', 'minute', 'second');
         var days = $('#day').text();
-
         // 设置标题
         if (parseInt(days / 365) != 0) {
             $(document).attr("title", "在一起" + parseInt(days / 365) + "年,感谢相伴。");
@@ -153,7 +152,6 @@
             $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,感谢相伴。");
         } else
             $(document).attr("title", "在一起" + days + "天,感谢相伴。");
-
         //设置每一张图片对应的文字
         var says = new Array(
             "一路相伴,感谢有你",
@@ -190,11 +188,9 @@
             "厦门，软件园。我也开始喜欢上画画了，画很多很多的你",
             "时间不停，爱你不止，携子之手，白头偕老"
         );
-
-
         var start = function() {
             var index = 0;
-            var rate = 6000;
+            var rate = 12000;
             $('#say').text(says[(index++) % says.length]);
          	var _play = function () {
          		$('#say').hide();
@@ -204,7 +200,6 @@
          	};
             setInterval(_play, rate);
         }();
-
     });
     </script>
 </body>
